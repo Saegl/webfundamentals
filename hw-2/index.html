@@ -1,12 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUy6nUYQUmpERCN6f7PUug4O6M2LyVWyU&callback=initMap">
+    </script>
+    <script src="https://kit.fontawesome.com/00a60dbe9f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <div id="menu">
+        <div id="quicklinks">
+            <div class="content">
+                <div class="space">
+                    <div id="phone"><i class="fas fa-phone"></i> 8(777)888-11-22</div>
+                    <div id="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-menu">
+            <div class="content">
+                <div class="space">
+                    <div id="logo"></div>
+                    <div id="links">
+                        <a href="">Home</a>
+                        <a href="">My courses</a>
+                        <a href="">About</a>
+                        <a href="">My profile</a>
+                        <a href="">Become an instructor</a>
+                        <a href="">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="intro">
+        <div id="intro-text-box">
+            <div class="empty"></div>
+            <div id="intro-text">
+                <h1>Hi, I am <br><span id="name">Richard Smith</span></h1>
+                <div id="quote">
+                    <div></div>
+                    <p>
+                        Films can shape the destiny of talented youngsters, <br> who want to excel in acting or the art of film making <br> if you have the passion we have the door open for <br> you!
+                    </p>
+                    <img src="assets/sign.png" alt="" width="150px" style="float: right;">
+                </div>
+            </div>
+        </div>
+        <div id="back-box">
+            <div id="photo">
+                <img src="assets/me.png" alt="">
+            </div>
+            <div class="right">
+                <div class="empty"></div>
+                <div id="awards">
+                    <div class="award">
+                        <div id="award1"></div>
+                        <h2>Editors Choice</h2>
+                        <p>2010-2016</p>
+                    </div>
+                    <div class="award">
+                        <div id="award2"></div>
+                        <h2>Best Trainer</h2>
+                        <p>2010-2016</p>
+                    </div>
+                    <div class="award">
+                        <div id="award3"></div>
+                        <h2>Best performance</h2>
+                        <p>2016-2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="expertise">
+        <div class="content">
+            <div class="stars"></div>
+            <h2>My areas of Expertise</h2>
+            <p>With every passing course, I have gained more knowledge</p>
+            <div id="expertises">
+                <div class="expert-item">
+                    <div class="expert-photo" id="expert-photo1"></div>
+                    <h2>Communication</h2>
+                    <p>1 course(s)</p>
+                </div>
+                <div class="expert-item">
+                    <div class="expert-photo" id="expert-photo2"></div>
+                    <h2>Education</h2>
+                    <p>1 course(s)</p>
+                </div>
+                <div class="expert-item">
+                    <div class="expert-photo" id="expert-photo3"></div>
+                    <h2>Theater</h2>
+                    <p>1 course(s)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gray-box">
+        <div class="content">
+            <div class="stars"></div>
+            <h2>My courses</h2>
+            <p>I learn from every student who is in my class. Because learning is a 2-way process</p>
+            <div id="course-cards">
+                <div class="course-card">
+                    <div class="course-photo" id="course-photo1">
+                        <div class="action"></div>
+                        <div class="action"></div>
+                    </div>
+                    <div class="course-text">
+                        <div class="course-author"></div>
+                        <h2>Richard Smith</h2>
+                        <p>Dance and instructor</p>
+                        <h3>Data structures</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, voluptas ipsum doloribus, fugit consectetur blanditiis id voluptatem harum necessitatibus fuga magnam deserunt molestias? Perferendis corrupti ex officia ad exercitationem
+                            corporis.
+                        </p>
+                        <button>Add to card</button>
+                    </div>
+                    <div class="course-actions">
+                        <div class="course-rating">
+                            <div><i class="fas fa-user-friends"></i>5</div>
+                            <div><i class="fas fa-star"></i>3.8 Stars</div>
+                        </div>
+                        <div class="cost">
+                            € 30
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card" id="card2">
+                    <div class="course-photo" id="course-photo2">
+                        <div class="action"></div>
+                        <div class="action"></div>
+                    </div>
+                    <div class="course-text">
+                        <div class="course-author"></div>
+                        <h2>Richard Smith</h2>
+                        <p>Dance and instructor</p>
+                        <h3>Cinematography</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, voluptas ipsum doloribus, fugit consectetur blanditiis id voluptatem harum necessitatibus fuga magnam deserunt molestias? Perferendis corrupti ex officia ad exercitationem
+                            corporis.
+                        </p>
+                        <button>Add to card</button>
+                    </div>
+                    <div class="course-actions">
+                        <div class="course-rating">
+                            <div><i class="fas fa-user-friends"></i>5</div>
+                            <div><i class="fas fa-star"></i>4.7 Stars</div>
+                        </div>
+                        <div class="cost">
+                            <span class="old-price">€ 40</span> € 35
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card" id="card3">
+                    <div class="course-photo" id="course-photo3">
+                        <div class="action"></div>
+                        <div class="action"></div>
+                    </div>
+                    <div class="course-text">
+                        <div class="course-author"></div>
+                        <h2>Richard Smith</h2>
+                        <p>Dance and instructor</p>
+                        <h3>Communication Skills</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, voluptas ipsum doloribus, fugit consectetur blanditiis id voluptatem harum necessitatibus fuga magnam deserunt molestias? Perferendis corrupti ex officia ad exercitationem
+                            corporis.
+                        </p>
+                        <button>Add to card</button>
+                    </div>
+                    <div class="course-actions">
+                        <div class="course-rating">
+                            <div><i class="fas fa-user-friends"></i>5</div>
+                            <div><i class="fas fa-star"></i>4.3 Stars</div>
+                        </div>
+                        <div class="cost">
+                            € 20
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white-box">
+        <div class="content">
+            <div class="stars"></div>
+            <h2>My Endorsements</h2>
+            <p>I learn from every student who is in my class. Because learning is a 2-way process</p>
+            <div id="endors">
+                <div class="endor">
+                    <div class="circle"></div>
+                    <h2>Assessing the Need</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Explicabo <br> sequi mollitia vel</p>
+                </div>
+                <div class="endor">
+                    <div class="circle"></div>
+                    <h2>Estimating your Potential</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Explicabo <br> sequi mollitia vel</p>
+                </div>
+                <div class="endor">
+                    <div class="circle"></div>
+                    <h2>Setting the Goal</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Explicabo <br> sequi mollitia vel</p>
+                </div>
+                <div class="endor">
+                    <div class="circle"></div>
+                    <h2>Improvising existing Skills</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Explicabo <br> sequi mollitia vel</p>
+                </div>
+                <div class="endor">
+                    <div class="circle"></div>
+                    <h2>Developing the Skills</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Explicabo <br> sequi mollitia vel</p>
+                </div>
+                <div class="endor">
+                    <div class="circle"></div>
+                    <h2>Individual Growth</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Explicabo <br> sequi mollitia vel</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gray-box">
+        <div class="content">
+            <h2>Learn the Practical way</h2>
+            <p>Films can shape the destiny of talented youngsters, who want to</p>
+            <p>
+                Films can shape the destiny of talented youngsters, who want to excel in acting or the art <br> of film making. If you have the passion, we have the door open for you! Award winning <br> artist & professionals teach you the art of acting,
+                film making, cinematography <br> and screenwriting among others. <br>
+            </p>
+            <div id="team"></div>
+        </div>
+    </div>
+    <div class="white-box">
+        <div class="content">
+            <div class="stars"></div>
+            <h2>Holistic Approach to Teaching</h2>
+            <p>I offer myriad subject of study in your journey of mastering yourself.</p>
+            <div id="holistic-cards">
+                <div class="holistic-card">
+                    <div class="holistic-photo" id="team1">
+                        <div class="left-number">01</div>
+                    </div>
+                    <div class="holistic-text holistic-left">
+                        <h2>Interaction</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Adipisci nulla <br> quas inventore cupiditate, <br> corrupti voluptates accusantium!</p>
+                        <a href="">Learn more</a>
+                    </div>
+                </div>
+                <div class="holistic-card">
+                    <div class="holistic-photo" id="team2">
+                        <div class="left-number">03</div>
+                    </div>
+                    <div class="holistic-text holistic-left">
+                        <h2>Classroom <br> Lectures</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Adipisci nulla <br> quas inventore cupiditate, <br> corrupti voluptates accusantium!</p>
+                        <a href="">Learn more</a>
+                    </div>
+                </div>
+                <div class="holistic-card">
+                    <div class="holistic-text holistic-right">
+                        <h2>Project Completion</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Adipisci nulla <br> quas inventore cupiditate, <br> corrupti voluptates accusantium!</p>
+                        <a href="">Learn more</a>
+                    </div>
+                    <div class="holistic-photo" id="team3">
+                        <div class="right-number">02</div>
+                    </div>
+                </div>
+                <div class="holistic-card">
+                    <div class="holistic-text holistic-right">
+                        <h2>Hands on <br> Experience</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Adipisci nulla <br> quas inventore cupiditate, <br> corrupti voluptates accusantium!</p>
+                        <a href="">Learn more</a>
+                    </div>
+                    <div class="holistic-photo" id="team4">
+                        <div class="right-number">04</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white-box">
+        <div class="content">
+            <div class="stars"></div>
+            <h2>What people think about me</h2>
+            <p>Knowing what students think helps my growth</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam officia doloribus <br> esse dolor quis fuga totam cupiditate cum sed, temporibus facere <br> voluptatum debitis, mollitia rem? Sed sunt quis nostrum quod.</p>
+            <div id="people">
+                <div class="human">
+                    <div class="human-photo" id="man1"></div>
+                    <h2>Malcolm Figueroa</h2>
+                    <p>Actor</p>
+                </div>
+                <div class="human">
+                    <div class="human-photo" id="man2"></div>
+                    <h2>Jeanette Gutierrez</h2>
+                    <p>Director</p>
+                </div>
+                <div class="human">
+                    <div class="human-photo" id="man3"></div>
+                    <h2>Winston Harrington</h2>
+                    <p>Singer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div id="contact-text">
+            <div id="recent">
+                <h2>RECENT WORKS</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati necessitatibus esse exercitationem assumenda id corrupti, quam ducimus commodi vitae maiores optio repellat quaerat modi, repudiandae distinctio eum nostrum fuga voluptas.</p>
+                <p>I'm here</p>
+            </div>
+            <div id="quick-links">
+                <h2>QUICK LINKS</h2>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Message">
+                <button>Submit</button>
+            </div>
+        </div>
+        <div id="map">
+            <p>Google maps</p>
+        </div>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                var uluru = {
+                    lat: -25.344,
+                    lng: 131.036
+                };
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {
+                        zoom: 4,
+                        center: uluru
+                    });
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+    </div>
+    <footer>
+        <div class="content">
+            <p>© 2020 Alisher Zhubanyshev</p>
+        </div>
+    </footer>
 </body>
+
 </html>

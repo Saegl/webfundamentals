@@ -1,0 +1,549 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1280px;
+    margin: auto;
+    text-align: center;
+}
+
+.gray-box {
+    background-color: rgb(240, 240, 240);
+    padding: 50px;
+}
+
+.white-box {
+    background-color: white;
+    padding: 50px;
+}
+
+.content h2 {
+    font-size: 2em;
+}
+
+.fab {
+    color: white;
+    margin: 5px;
+}
+
+#quicklinks {
+    background-color: rgb(28, 47, 77);
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+}
+
+#phone {
+    color: white;
+    margin: 12px;
+}
+
+#social {
+    margin: 12px;
+}
+
+#logo {
+    background-image: url('assets/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.stars {
+    display: block;
+    background-image: url('assets/stars-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#links {
+    margin: 16px;
+}
+
+#links a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 5px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+}
+
+#intro-text-box {
+    display: flex;
+    justify-content: space-between;
+    height: 390px;
+    max-width: 1280px;
+}
+
+#intro-text {
+    margin: 15px;
+    margin-right: 13vw;
+}
+
+#intro-text h1 {
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#intro-text span {
+    font-size: 46px;
+}
+
+#back-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(240, 240, 240);
+    min-height: 330px;
+}
+
+#photo {
+    position: absolute;
+    top: 50px;
+    left: 15vw;
+}
+
+.right {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    max-height: 1280px;
+}
+
+#awards {
+    margin-left: 300px;
+    display: flex;
+}
+
+.award {
+    margin: 10px;
+    text-align: center;
+}
+
+.award h2 {
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#award1,
+#award2,
+#award3 {
+    background-image: url('assets/cup.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 120px;
+}
+
+#expertises {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expert-item {
+    margin: 10px;
+}
+
+.expert-item h2 {
+    font-size: 1.3em;
+}
+
+.expert-photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+
+#expert-photo1 {
+    background-image: url('assets/expert1.jpg');
+}
+
+#expert-photo2 {
+    background-image: url('assets/expert2.jpg');
+}
+
+#expert-photo3 {
+    background-image: url('assets/expert3.jpg');
+}
+
+#course-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: white;
+    width: 300px;
+}
+
+.course-card h2 {
+    font-size: 16px;
+}
+
+.course-card p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.course-card button {
+    background-color: rgb(218, 187, 110);
+    border: none;
+    padding: 9px;
+    border-radius: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.course-text {
+    position: relative;
+    top: -45px;
+    margin: 10px;
+}
+
+.course-photo {
+    display: flex;
+    background-image: url('assets/team1.jpg');
+    background-size: cover;
+    height: 200px;
+}
+
+#course-photo1 {
+    background-image: url('assets/team2.jpg');
+}
+
+#course-photo2 {
+    background-image: url('assets/team3.jpg');
+}
+
+#course-photo3 {
+    background-image: url('assets/team4.jpg');
+}
+
+.action {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: gold;
+    margin: 7px;
+    margin-right: 0px;
+    background-image: url('assets/user.png');
+    background-size: contain;
+}
+
+.course-author {
+    background-image: url('assets/man1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+.course-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.fa-user-friends {
+    margin: 5px;
+    color: rgb(218, 187, 110);
+}
+
+.fa-star {
+    margin: 5px;
+    color: gold;
+}
+
+.cost {
+    color: rgb(218, 187, 110);
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.course-rating {
+    display: flex;
+}
+
+#endors {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.endor {
+    flex: 33%;
+    flex-direction: column;
+}
+
+.endor h2 {
+    font-size: 1em;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(28, 47, 77);
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url('assets/pizza.png');
+    background-size: contain;
+}
+
+#team {
+    background-image: url('assets/team.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 350px;
+    margin: auto;
+}
+
+#holistic-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.holistic-card {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.holistic-card h2 {
+    font-size: 1.5em;
+}
+
+.holistic-card p {
+    margin-bottom: 25px;
+}
+
+.holistic-card a {
+    text-decoration: none;
+    color: rgb(218, 187, 110);
+    border: solid 2px;
+    padding: 10px;
+}
+
+.holistic-text {
+    margin: 12px;
+}
+
+.left-number {
+    background-color: white;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(218, 187, 110);
+}
+
+.right-number {
+    background-color: white;
+    top: 5px;
+    right: -5px;
+    width: 90px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(218, 187, 110);
+}
+
+.holistic-left {
+    text-align: left;
+}
+
+.holistic-right {
+    text-align: right;
+}
+
+.holistic-photo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+    margin: auto;
+}
+
+#team1 {
+    background-image: url('assets/team1.jpg');
+}
+
+#team2 {
+    background-image: url('assets/team2.jpg');
+}
+
+#team3 {
+    background-image: url('assets/team3.jpg');
+}
+
+#team4 {
+    background-image: url('assets/team4.jpg');
+}
+
+#people {
+    display: flex;
+}
+
+.human {
+    flex: 33%;
+    margin: 16px;
+}
+
+.human h2 {
+    font-size: 16px;
+}
+
+.human p {
+    font-size: 14px;
+}
+
+.human-photo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+#man1 {
+    background-image: url('assets/man1.jpg');
+}
+
+#man2 {
+    background-image: url('assets/man2.jpg');
+}
+
+#man3 {
+    background-image: url('assets/man3.jpg');
+}
+
+#contact {
+    display: flex;
+    background-color: rgb(28, 47, 77);
+    color: white;
+}
+
+#contact-text {
+    flex-grow: 1;
+    display: flex;
+    flex: 50%;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+#recent {
+    flex: 50%;
+    margin: 35px;
+}
+
+#quick-links {
+    flex: 50%;
+    margin: 35px;
+}
+
+#quick-links input {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#quick-links button {
+    border: none;
+    background-color: rgb(218, 187, 110);
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#map {
+    flex: 50%;
+    flex-grow: 1;
+    min-height: 250px;
+}
+
+@media (max-width: 1128px) {
+    #photo {
+        position: absolute;
+        top: 50px;
+        left: 5vw;
+    }
+}
+
+@media (max-width: 980px) {
+    #photo {
+        display: none;
+    }
+    .empty,
+    #card2,
+    #card3 {
+        display: none;
+    }
+    #intro-text-box {
+        justify-content: center;
+    }
+    #awards {
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    #expertises,
+    #contact,
+    #contact-text {
+        flex-direction: column;
+    }
+    .endor {
+        flex: 100%;
+    }
+}

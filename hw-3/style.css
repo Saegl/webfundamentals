@@ -1,0 +1,94 @@
+#intro {
+    height: 100vh;
+    background-image: url('assets/intro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@media (max-width: 768px) {
+    #main-text {
+        position: absolute;
+        top: 120px;
+        left: 20px;
+    }
+}
+
+
+#skills {
+    background-image: url('assets/notepad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.carousel-item {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.fly {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.gray {
+    background-color: rgb(240, 240, 240);
+}
+
+.primary-color {
+    background-color: rgb(16, 201, 195);
+}
+
+.mybtn {
+    border: none;
+    font-weight: 600;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    color: white;
+    background-color: rgb(16, 201, 195);
+}
+
+#cat {
+    max-width: 50vw;
+}
+
+.logo {
+    background-image: url('assets/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 75px;
+}
+
+#logomain {
+    background-image: url('assets/logomain.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 50px;
+}
+
+.pizza {
+    background-image: url('assets/pizza.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    max-height: 75px;
+}
+
+.bottle {
+    background-image: url('assets/bottle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 75px;
+}
+
+.photo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 25vw;
+}

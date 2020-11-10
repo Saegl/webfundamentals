@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate!</title>
+    <style>
+        p {
+            display: inline-block;
+        }
+        
+        input {
+            display: inline-block;
+        }
+        
+        h2 {
+            margin: 3rem;
+        }
+
+        #draw-area {
+            position: relative;
+            margin: 2rem;
+        }
+
+        .rectangular {
+            width: 100px;
+            height: 100px;
+            border: solid 3px grey;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border: solid 3px red;
+            border-radius: 50%;
+        }
+
+        .grey-circle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: solid 3px grey;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Task 1</h3>
+    <p>1t Number:</p>
+    <input type="text" id="first">
+    <br>
+    <p>2nd Number</p>
+    <input type="text" id="second">
+    <br>
+    <button onclick="mul()">Multiply</button>
+    <button onclick="div()">Divide</button>
+    <br>
+    <p id="answer"></p>
+    <script>
+        let first = document.getElementById('first');
+        let second = document.getElementById('second');
+        let answer = document.getElementById('answer');
+        
+        function mul() {
+            answer.innerHTML = "The Result is: \n" + first.value * second.value;
+        }
+
+        function div() {
+            answer.innerHTML = "The Result is: \n" + first.value / second.value;
+        }
+    </script>
+
+    <h3>Task 2</h3>
+    <p>Celsius</p>
+    <input type="text" id="celsius">
+    <button onclick="toFahr()">To Fahrenheit</button>
+    <p id="from-cels"></p>
+    <br>
+
+    <p>Fahrenheit</p>
+    <input type="text" id="fahrenheit">
+    <button onclick="toCels()">To celsius</button>
+    <p id="from-fahr"></p>
+    <br>
+
+    <script>
+        let celsius = document.getElementById('celsius');
+        let fahrenheit = document.getElementById('fahrenheit');
+
+        function toFahr() {
+            document.getElementById('from-cels').innerHTML = 
+                celsius.value + "°C is " + ((celsius.value * 9/5) + 32) + "°F";
+        }
+
+        function toCels() {
+            document.getElementById('from-fahr').innerHTML = 
+                fahrenheit.value + "°F is " + (fahrenheit.value - 32) * (5/9) + "°C";
+        }
+    </script>
+
+    <h3>Task 3</h3>
+    <p>Input radius value and get the volume of a sphere.</p><br>
+
+    <p>Radius</p>
+    <input type="text" id="radius">
+    <br>
+    <p>Volume</p>
+    <input type="text" id="volume">
+    <br>
+    <button onclick="calcvolume()">Calculate</button>
+
+    <script>
+        let radius = document.getElementById('radius');
+        let volume = document.getElementById('volume');
+
+        function calcvolume() {
+            let r = radius.value;
+            volume.value = (4/3) * Math.PI * r * r * r;
+        }
+    </script>
+
+    <h3>Task 4</h3>
+    <p>Reverse Number</p><br>
+
+    <p>Enter x</p>
+    <input type="text" id="x">
+    <button onclick="reverse()">REVERSE!</button>
+    <p id="reversed"></p>
+
+    <script>
+        let x = document.getElementById('x');
+        function reverse() {
+            document.getElementById("reversed").innerHTML = 
+                x.value.split("").reverse().join("");
+        }
+    </script>
+
+    <h3>Task 5-6-7</h3>
+
+    <button onclick="rect()">Click to draw rectangular</button>
+    <button onclick="circle()">Click to draw circle</button>
+    <button onclick="circles()">Click to draw diagonal circles</button>
+    <div id="draw-area"></div>
+
+    <script>
+        let area = document.getElementById('draw-area');
+
+        function rect() {
+            let r = document.createElement("div");
+            r.classList.add("rectangular");
+            area.innerHTML = '';
+            area.appendChild(r);
+        }
+
+        function circle() {
+            let circleElement = document.createElement("div");
+            circleElement.classList.add('circle');
+            area.innerHTML = '';
+            area.appendChild(circleElement);
+        }
+
+        function circles() {
+            area.innerHTML = '';
+
+            let step = 255 / 6;
+
+            for (let i = 0; i < 6; i++) {
+                let color = 255 - step * i;
+                let greyCircle = document.createElement("div");
+                greyCircle.classList.add('grey-circle');
+                greyCircle.style.left = i * 100 + "px";
+                greyCircle.style.top = i * 100 + "px";
+                greyCircle.style.backgroundColor = "rgb(" + color + "," + color + "," + color + ")";
+                area.appendChild(greyCircle);
+            }
+        }
+    </script>
+</body>
+</html>

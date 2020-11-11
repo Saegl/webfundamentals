@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Kurmangazy Kongratbayev">
+  <title>Blog · Bootstrap</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
+  <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+  <main role="main">
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a
+          jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
+        </p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          New Blog
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="">New Blog</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="title">Blog title</label>
+                    <input type="text" id="title" name="title" class="form-control" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="description">Blog description</label>
+                    <textarea type="text" id="description" name="description" class="form-control" required=""
+                      rows="2"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="content">Blog content</label>
+                    <textarea type="text" id="contenting" name="content" class="form-control" required=""
+                      rows="5"></textarea>
+                  </div>
+                  <button type="button" id="newblog" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Update Modal -->
+        <div class="modal fade" id="updateModalCenter" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="">Update Blog</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="title">Blog title</label>
+                    <input type="text" id="titleUpdate" name="title" class="form-control" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="description">Blog description</label>
+                    <textarea type="text" id="descriptionUpdate" name="description" class="form-control" required=""
+                      rows="2"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="content">Blog content</label>
+                    <textarea type="text" id="contentingUpdate" name="content" class="form-control" required=""
+                      rows="5"></textarea>
+                  </div>
+                  <button type="button" id="buttonUpdate" class="btn btn-primary">Update</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" id="app">
+      </div>
+      <hr>
+    </div>
+    <footer class="container">
+      <p>{ Kurmangazy Kongratbayev }</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 680px;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+textarea {
+    margin: 0.5rem;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    padding: 12px;
+    background-color: rgb(240, 240, 240);
+}
+
+.col {
+    flex: 50%;
+}
+
+.count {
+    font-weight: bold;
+}

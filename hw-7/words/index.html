@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <h1>Word Counter</h1>
+        <textarea name="" id="text" cols="30" rows="10"></textarea>
+        <div class="block">
+            <div class="col">Characters: <span class="count" id="characters">0</span></div>
+            <div class="col">Words: <span class="count" id="words">0</span></div>
+        </div>
+        <div class="block">
+            <div class="col">Sentences: <span class="count" id="sentence">0</span></div>
+            <div class="col">Paragraphs: <span class="count" id="paragraphs">1</span></div>
+        </div>
+        <div class="block">
+            <div class="col">Reading Time: <span class="count" id="reading">0s</span></div>
+        </div>
+        <h2>Top keywords:</h2>
+        <div id="block-keywords" class="block"></div>
+    </div>
+</body>
+</html>

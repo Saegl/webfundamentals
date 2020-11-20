@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+h1, h2 {
+    font-weight: normal;
+    color: rgba(0, 0, 0, .8)
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: rgb(190, 128, 255);
+    overflow-x: hidden;
+    transition: 1s;
+}
+
+.num {
+    font-size: 5rem;
+}
+
+#timeblock {
+    display: flex;
+}
+
+.col {
+    margin: 2rem;
+}
